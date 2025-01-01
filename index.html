@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3Schools Online Web Tutorials</title>
+    <link rel="icon" href="https://www.w3schools.com/favicon.ico">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!------------------------font---------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Yatra+One&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="headerone">
+            <div class="header-left">
+                <a href="#" class="menu-btn">
+                    <div class="w3schools-logo">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJPZAINpYal7ohM_CfFR8yWuQfYpCdP1sCYg&s" />
+                    </div>
+                </a>
+                <div href="#Tutorial" class="menu-btn" id="Tutorial-btn">
+                    Tutorial <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div href="#Exercises" class="menu-btn" id="Exercises-btn">
+                    Exercises <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div href="#Certificates" class="menu-btn" id="Certificates-btn">
+                    Certificates <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div href="#Services" class="menu-btn" id="Services-btn">
+                    Services <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <!-------Menu--------------->
+                <div class="menu-btn" id="btn-m" /> Menu<i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="header-left1">
+                <i>
+                    <p style=" margin-left:10px;">search...</p>
+                </i><i class="fa-solid fa-magnifying-glass"
+                    style="font-size: 16px; color: black; align-items: center; text-align: center;"></i>
+            </div>
+            <div class="header-left2">
+                <div class="togglelightdark">
+                    <i class="fa-solid fa-circle-half-stroke"
+                        style="font-size: 16px;text-align: center; padding: 9px;"></i>
+                </div>
+            </div>
+            <div class="header-right">
+
+                <div class="plus-btn"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="36" viewBox="0 0 12 16"
+                        fill="none" aria-hidden="true">
+                        <path
+                            d="M6.65723 6.24707C6.76704 5.91764 7.233 5.91765 7.34281 6.24707L7.98828 8.1835C8.276 9.04666 8.95332 9.72399 9.81648 10.0117L11.7529 10.6572C12.0824 10.767 12.0824 11.233 11.7529 11.3428L9.81649 11.9883C8.95332 12.276 8.27599 12.9533 7.98828 13.8165L7.34281 15.7529C7.233 16.0823 6.76704 16.0823 6.65723 15.7529L6.01173 13.8165C5.72401 12.9533 5.04669 12.276 4.18353 11.9883L2.24707 11.3428C1.91764 11.233 1.91764 10.767 2.24707 10.6572L4.18353 10.0117C5.04669 9.72399 5.72401 9.04667 6.01173 8.18352L6.65723 6.24707Z"
+                            fill="#9763f6"></path>
+                        <path
+                            d="M2.79434 1.14824C2.86023 0.950586 3.1398 0.950587 3.20569 1.14824L3.59297 2.3101C3.7656 2.828 4.172 3.2344 4.6899 3.40703L5.85177 3.79432C6.04942 3.86021 6.04942 4.13978 5.85177 4.20567L4.6899 4.59296C4.172 4.76559 3.7656 5.17199 3.59297 5.68989L3.20569 6.85176C3.13981 7.04941 2.86023 7.04942 2.79434 6.85176L2.40704 5.68988C2.23441 5.17198 1.82801 4.76559 1.31012 4.59296L0.148241 4.20567C-0.0494137 4.13978 -0.0494138 3.86021 0.148241 3.79432L1.31012 3.40703C1.82802 3.2344 2.23441 2.82801 2.40704 2.31011L2.79434 1.14824Z"
+                            fill="#9763f6"></path>
+                        <path
+                            d="M9.8629 0.0988265C9.90682 -0.032943 10.0932 -0.0329419 10.1371 0.098828L10.3953 0.873401C10.5104 1.21867 10.7813 1.4896 11.1266 1.60469L11.9012 1.86288C12.0329 1.9068 12.0329 2.09319 11.9012 2.13711L11.1266 2.39531C10.7813 2.51039 10.5104 2.78133 10.3953 3.12659L10.1371 3.90117C10.0932 4.03294 9.90682 4.03294 9.8629 3.90117L9.6047 3.12659C9.48961 2.78132 9.21868 2.5104 8.87342 2.39531L8.09883 2.13711C7.96706 2.09319 7.96706 1.9068 8.09883 1.86288L8.87342 1.60469C9.21868 1.4896 9.48961 1.21867 9.6047 0.873408L9.8629 0.0988265Z"
+                            fill="#9763f6"></path>
+                    </svg>Plus</div>
+
+                <div class="tech-btn"><svg stroke="currentColor" fill="#9763f6" stroke-width="0" viewBox="0 0 640 512"
+                        focusable="false" class="chakra-icon css-9gdywz" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M622.34 153.2L343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z">
+                        </path>
+                    </svg>For teachers </div>
+
+                <div class="space-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="#9763f6" height="1em"
+                        viewBox="0 0 640 512" aria-hidden="true">
+                        <path
+                            d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
+                            fill="currentColor"></path>
+                    </svg> Spaces </div>
+
+                <div class="get-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="#9763f6" height="1em"
+                        viewBox="0 0 576 512" aria-hidden="true">
+                        <path
+                            d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H69.5c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H199.7c-11.5 0-21.4-8.2-23.6-19.5L170.7 288H459.2c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32h-411C111 12.8 91.6 0 69.5 0H24zM131.1 80H520.7L482.4 222.2c-2.8 10.5-12.3 17.8-23.2 17.8H161.6L131.1 80zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"
+                            fill="currentColor"></path>
+                    </svg> Get Certified </div>
+
+            </div>
+            <div class="w3nav-button"><button class="button1">Sign Up<button class="button2">Login</button></button>
+            </div>
+        </div>
+
+
+
+        <div class="mynavbar">
+            <a class="prev-icon">&#10094;</a>
+            <a class="next-icon">&#10095;</a>
+            <div class="slider">
+
+                <div> <a href="" class="ga-nav" title="HTML Tutorial"></a> </div>
+                <div> <a href="" class="ga-nav" title="CSS Tutorial"></a> </div>
+                <div> <a href="" class="ga-nav" title="JavaScript Tutorial"></a></div>
+                <div> <a href="" class="ga-nav" title="SQL Tutorial"></a> </div>
+                <div> <a href="" class="ga-nav" title="Python Tutorial"></a> </div>
+                <div> <a href="" class="ga-nav" title="Java Tutorial"></a> </div>
+                <div> <a href="" class="ga-nav" title="PHP Tutorial"></a> </div>
+                <div> <a href="" class="ga-nav" title="How to"></a> </div>
+                <div> <a href="" class="ga-nav" title="W3.CSS Tutorial"></a> </div>
+                <div> <a href="" class="ga-nav" title="C Tutorial"></a> </div>
+                <div> <a href="" class="ga-nav" title="C++ Tutorial"></a> </div>
+                <div> <a href="" class="ga-nav" title="C# Tutorial"></a> </div>
+                <div> <a href="" class="ga-nav" title="Bootstrap "></a></div>
+                <div> <a href="" class="ga-nav" title="React Tutorial"></a> </div>
+                <div> <a href="" class="ga-nav" title="MySQL Tutorial"></a> </div>
+                <div> <a href="" class="ga-nav" title="JQuery Tutorial"></a> </div>
+                <div> <a href="" class="ga-nav" title="Excel Tutorial"></a> </div>
+                <div> <a href="" class="ga-nav" title="XML Tutorial"></a> </div>
+                <div> <a href="" class="ga-nav" title="Django Tutorial"></a> </div>
+                <div> <a href="" class="ga-nav" title="NumPy Tutorial"></a> </div>
+                <div> <a href="" class="ga-nav" title="Pandas Tutorial"></a> </div>
+                <div> <a href="" class="ga-nav" title="Node.js Tutorial"></a> </div>
+
+            </div>
+
+        </div>
+    </header>
+    <!--------------------------------------------part01---------------------------------------------------------------------------------->
+
+    <div class="section">
+
+        <div class="section01">
+            <h1>Learn to Code</h1>
+            <p>With the world's largest web developer site.</p>
+            <button class="button3">Search our tutorials, e.g. HTML"</button> <button class="button4"><i
+                    class="fa-solid fa-magnifying-glass"></i></button><br>
+            <a href="where_to_start.asp" class="ga-fp">Not Sure Where To Begin?</a>
+
+        </div>
+
+        <svg style="background-color:#D9EEE1;" width="100%" height="100" margin-top:50px viewBox="0 0 100 100"
+            preserveAspectRatio="none">
+            <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35" class="svg"></path>
+        </svg>
+    </div>
+
+    </div>
+    <div class="section-html">
+        <div class="section-left">
+            <h1>HTML</h1>
+            <p>The language for building web pages</p>
+            <a href="https://www.w3schools.com/html/default.asp" class="bg-green"> Learn HTML</a>
+            <a href="https://www.w3schools.com/videos/index.php" class="bg-yeollow">Video Tutorial</a>
+            <a href="https://www.w3schools.com/tags/default.asp" class="bg-blue"> HTML Reference </a>
+            <a href="https://campus.w3schools.com/en-in/collections/certifications/products/html-certificate"
+                class="bg-pink"> Get Certified</a>
+        </div>
+        <div class="section-right">
+            <div class="editor-con">
+                <h1>HTML Example</h1>
+            </div>
+            <div class="editor">
+
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red">
+                        html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>html<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>title<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>HTML Tutorial<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>body<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>h1<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>This is a heading<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>This is a paragraph.<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/html<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>
+
+            </div>
+            <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default_default" class="editor-btn">Try
+                it Yourself</a>
+        </div>
+
+    </div>
+
+    <div class="section-CSS">
+        <div class="section-left">
+            <h1>CSS</h1>
+            <p>The language for styling web pages</p>
+            <a href="https://www.w3schools.com/css/default.asp" class="bg-green"> Learn CSS</a>
+            <a href="https://www.w3schools.com/cssref/index.php" class="bg-blue"> CSS Reference</a>
+            <a href="https://campus.w3schools.com/en-in/collections/certifications/products/css-certificate"
+                class="bg-pink"> Get Certified </a>
+        </div>
+        <div class="section-right">
+            <div class="editor-con">
+                <h1>CSS Example:</h1>
+            </div>
+            <div class="editor">
+
+                body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                    style="color:red"><br>
+                    &nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                            class="cssdelimitercolor" style="color:black">:</span> lightblue<span
+                            class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                    class="cssdelimitercolor" style="color:black">}</span><br><br>
+                h1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                    style="color:red"><br>
+                    &nbsp; color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                            class="cssdelimitercolor" style="color:black">:</span> white<span class="cssdelimitercolor"
+                            style="color:black">;</span></span><br>
+                    &nbsp; text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                            class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor"
+                            style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                    style="color:black">}</span><br><br>p <span class="cssdelimitercolor"
+                    style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+                    font-family<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                            class="cssdelimitercolor" style="color:black">:</span> verdana<span
+                            class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                    class="cssdelimitercolor" style="color:black">}</span> </span>
+
+            </div>
+            <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_default" class="editor-btn">Try it
+                Yourself</a>
+        </div>
+
+    </div>
+
+    <div class="section-JavaScript">
+        <div class="section-left">
+            <h1>JavaScript</h1>
+            <p>The language for programming web pages</p>
+            <a href="https://www.w3schools.com/js/default.asp" class="bg-green"> Learn JavaScript</a>
+            <a href="https://www.w3schools.com/jsref/default.asp" class="bg-white"> JavaScript Reference</a>
+            <a href="https://campus.w3schools.com/en-in/collections/certifications/products/javascript-certificate"
+                class="bg-pink"> Get Certified </a>
+        </div>
+        <div class="section-right">
+            <div class="editor-con">
+                <h1>JavaScript Example:</h1>
+            </div>
+            <div class="editor">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>button<span class="attributecolor" style="color:red">
+                        onclick<span class="attributevaluecolor"
+                            style="color:mediumblue">="myFunction()"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Click Me!<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/button<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>script<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br>
+                    <span class="jskeywordcolor" style="color:mediumblue">function</span> myFunction() {<br><span
+                        class="jsnumbercolor" style="color:red">
+                    </span> &nbsp; <span class="jskeywordcolor" style="color:mediumblue">let</span> x =
+                    document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span
+                        class="jsstringcolor" style="color:brown">"demo"</span>);<br><span class="jsnumbercolor"
+                        style="color:red">
+                    </span>&nbsp; x.<span class="jspropertycolor" style="color:black">style</span>.<span
+                        class="jspropertycolor" style="color:black">fontSize</span> = <span class="jsstringcolor"
+                        style="color:brown">"25px"</span>; <br><span class="jsnumbercolor" style="color:red">
+                    </span>&nbsp; x.<span class="jspropertycolor" style="color:black">style</span>.<span
+                        class="jspropertycolor" style="color:black">color</span> = <span class="jsstringcolor"
+                        style="color:brown">"red"</span>; <br>}<br>
+                </span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/script<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_default" class="editor-btn">Try it
+                Yourself</a>
+        </div>
+
+    </div>
+
+    <div class="section-Python">
+        <div class="section-left">
+            <h1>Python</h1>
+            <p>A popular programming language</p>
+            <a href="https://www.w3schools.com/python/default.asp" class="bg-green"> Learn Python</a>
+            <a href="https://www.w3schools.com/python/python_reference.asp" class="bg-blue"> Python Reference</a>
+            <a href="https://campus.w3schools.com/en-in/collections/certifications/products/python-certificate"
+                class="bg-pink"> Get Certified </a>
+        </div>
+        <div class="section-right">
+            <div class="editor-con">
+                <h1>Python Example:</h1>
+            </div>
+            <div class="editor">
+                <span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+                    </span> <span class="jskeywordcolor" style="color:mediumblue">if</span> <span class="jsnumbercolor"
+                        style="color:red">5</span> &gt; <span class="jsnumbercolor"
+                        style="color:red">2</span>:<br>&nbsp; print(<span class="jsstringcolor"
+                        style="color:brown">"Five is greater than two!"</span>)<span class="jsnumbercolor"
+                        style="color:red">
+                    </span> </span>
+            </div>
+            <a href="https://www.w3schools.com/python/trypython.asp?filename=demo_indentation" class="editor-btn">Try it
+                Yourself</a>
+        </div>
+
+    </div>
+
+    <div class="section-SQL">
+        <div class="section-left">
+            <h1>SQL</h1>
+            <p>A language for accessing databases</p>
+            <a href="https://www.w3schools.com/sql/default.asp" class="bg-green"> Learn SQL</a>
+            <a href="https://www.w3schools.com/sql/sql_ref_keywords.asp" class="bg-blue"> SQL Reference</a>
+            <a href="https://campus.w3schools.com/en-in/collections/certifications/products/sql-certificate"
+                class="bg-pink"> Get Certified </a>
+        </div>
+        <div class="section-right">
+            <div class="editor-con">
+                <h1>SQL Example:</h1>
+            </div>
+            <div class="editor">
+                <span class="sqlcolor" style="color:black"><span class="sqlnumbercolor" style="color: black;">
+                    </span> <span class="sqlkeywordcolor" style="color:mediumblue">SELECT</span> * <span
+                        class="sqlkeywordcolor" style="color:mediumblue">FROM</span> Customers<br><span
+                        class="sqlnumbercolor" style="color:black">
+                    </span> <span class="sqlkeywordcolor" style="color:mediumblue">WHERE</span> Country=<span
+                        class="sqlstringcolor" style="color:brown">'Mexico'</span>;<span class="sqlnumbercolor"
+                        style="color:black">
+                    </span>
+                </span>
+            </div>
+            <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_where" class="editor-btn">Try it
+                Yourself</a>
+        </div>
+
+    </div>
+
+    <!--------------------------------------------------------part02---------------------------------------------------------------------------------->
+    <section class="courses_card_container">
+        <div class="course-bigcard">
+            <div class="bg-pink">
+                <h2>PHP</h2>
+                <p>A web server programming language</p>
+                <a href="https://www.w3schools.com/php/default.asp" class="bg-blue">Learn PHP</a>
+            </div>
+            <div class="bg-yeollow">
+                <h2>jQuery</h2>
+                <p>A JS library for developing web pages</p>
+                <a href="https://www.w3schools.com/jquery/default.asp" class="bg-blue">Learn jQuery</a>
+            </div>
+            <div class="bg-purple">
+                <h2>Java</h2>
+                <p>A programming language</p>
+                <a href="https://www.w3schools.com/java/default.asp" class="bg-blue">Learn Java</a>
+            </div>
+            <div class="bg-Lblue">
+                <h2>C++</h2>
+                <p>A programming language</p>
+                <a href="https://www.w3schools.com/cpp/default.as" class="bg-blue">Learn C++</a>
+            </div>
+            <div class="bg-lBBlue">
+                <h2>W3.CSS</h2>
+                <p>A CSS framework for faster and better responsive web pages </p>
+                <a href="https://www.w3schools.com/w3css/default.asp" class="bg-blue">Learn W3.CSS</a>
+            </div>
+            <div class="bg-purple">
+                <h2>Bootstrap</h2>
+                <p>A CSS framework for designing better web pages</p>
+                <a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp" class="bg-blue"> Learn Bootstrap </a>
+            </div>
+
+        </div>
+
+        <div class="course-middlecard">
+            <a href="https://www.w3schools.com/c/index.php" class="bg-pink"> C</a>
+            <a href="https://www.w3schools.com/cs/index.php" class="bg-yeollow"> C#</a>
+        </div>
+
+        <div class="course-smallcards">
+
+            <a href="" class="bg-purple">R</a>
+            <a href="" class="bg-Lblue">Kotlin</a>
+            <a href="" class="bg-lBBlue">Node.js</a>
+            <a href="" class="bg-pink">React</a>
+            <a href="" class="bg-yeollow">JSON</a>
+            <a href="" class="bg-purple">Vue</a>
+            <a href="" class="bg-Lblue">MySQL</a>
+            <a href="" class="bg-lBBlue">XML</a>
+            <a href="" class="bg-pink">Sass</a>
+            <a href="" class="bg-yeollow">Icons</a>
+            <a href="" class="bg-purple">RWD</a>
+            <a href="" class="bg-Lblue">Graphics</a>
+            <a href="" class="bg-lBBlue">SVG</a>
+            <a href="" class="bg-pink">Canvas</a>
+            <a href="" class="bg-yeollow">Raspberry Pi</a>
+            <a href="" class="bg-purple">Cyber Security</a>
+            <a href="" class="bg-Lblue">Colors</a>
+            <a href="" class="bg-lBBlue">Git</a>
+            <a href="" class="bg-pink">Matplotlib</a>
+            <a href="" class="bg-yeollow">NumPy</a>
+            <a href="" class="bg-purple">Pandas</a>
+            <a href="" class="bg-Lblue">SciPy</a>
+            <a href="" class="bg-lBBlue">ASP</a>
+            <a href="" class="bg-pink">AngularJS</a>
+            <a href="" class="bg-yeollow">AppML</a>
+            <a href="" class="bg-purple">Go</a>
+            <a href="" class="bg-Lblue">TypeScript</a>
+            <a href="" class="bg-lBBlue">Django</a>
+            <a href="" class="bg-pink">MongoDB</a>
+            <a href="" class="bg-yeollow">Statistics</a>
+            <a href="" class="bg-purple">Data Science</a>
+            <a href="" class="bg-Lblue">Typing Speed</a>
+            <a href="" class="bg-lBBlue">How To</a>
+            <a href="" class="bg-pink">Code Game</a>
+            <a href="" class="bg-yeollow">Spaces</a>
+            <a href="" class="bg-purple">PostgreSQL</a>
+
+        </div>
+
+        <div class="course-middlecardp2">
+            <a href="" class="bg-lBBlue">Excel</a>
+            <a href="" class="bg-yeollow">DSA Data Structures and Algorithms</a>
+            <a href="" class="bg-pink">Machine Learning</a>
+            <a href="" class="bg-purple">Artificial intelligence</a>
+        </div>
+
+        <div class="code-section">
+            <h1>Code Editor</h1>
+            <p>With our online code editor, you can edit code and view the result in your browser</p>
+            <div class="code-editer">
+                <div class="code-editer-top">
+                    <div class="code-editer-top-left">
+                        <div class="dot" style="background: #ED594A;"></div>
+                        <div class="dot" style="background: #FDD800;"></div>
+                        <div class="dot" style="background: #5AC05A;"></div>
+                    </div>
+                    <div class="code-editer-top-right">
+                        www.w3schools.com/tryit/
+                    </div>
+                </div>
+                <div class="middelpart">
+                    <div class="active">Frontend</div>
+                    <div>Backend</div>
+                </div>
+                <img src="assets/image/03codeeditor.webp" alt="">
+            </div>
+            <div class="code-editor-btn">
+                <a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello" class="bg-green">Try Frontend
+                    Editor (HTML/CSS/JS)</a>
+                <a href="https://www.w3schools.com/tryit/trycompiler.asp?filename=demo_python" class="bg-yeollow">Try
+                    Backend Editor (Python/PHP/Java/c..)</a>
+            </div>
+
+        </div>
+
+        <div class="Spaces-section">
+            <h1>W3Schools Spaces</h1>
+            <p>If you want to create your own website, check out <a
+                    href="https://www.w3schools.com/spaces/index.php">W3Schools Spaces</a> . <br>It is free to use, and
+                does not require any setup:</p>
+            <img src="assets/image/04dynamicspaces.webp" alt=""><br>
+            <a href="https://www.w3schools.com/spaces/index.php" class="bg-green">Learn More</a>
+
+        </div>
+
+    </section>
+
+    <!----------------------------My Learning--------------------------------->
+    <section class="Learning-section">
+        <div class="learn-img">
+            <img src="assets/image/05 mylearning24.webp" alt="" />
+        </div>
+        <div class="learn-text">
+            <h1>My Learning</h1>
+            <p>Track your progress with
+                <br> our free "My Learning" program.
+            </p>
+            <p>Log in to your account, and start earning points!</p>
+            <a href="https://profile.w3schools.com/signup?redirect_url=https%3A%2F%2Fwww.w3schools.com%2"
+                class="bg-green"> Sign Up for Free</a>
+        </div>
+    </section>
+    <!----------------------------Become a Plus User-------------------------------->
+    <section class="section-plus-user">
+        <div class="plus-user">
+            <h1>Become a Plus User</h1>
+            <p>And unlock powerful features:</p>
+            <div class="list">
+                <div class="list-item">
+                    <img src="assets/image/05check3.db67d31e.svg">
+                    <p>Browse W3Schools without ads</p>
+                </div>
+                <div class="list-item">
+                    <img src="assets/image/05check3.db67d31e.svg">
+                    <p>Build and host Websites</p>
+                </div>
+                <div class="list-item">
+                    <img src="assets/image/05check3.db67d31e.svg">
+                    <p>Get extra credits</p>
+                </div>
+                <div class="list-item">
+                    <img src="assets/image/05check3.db67d31e.svg">
+                    <p>Priority support</p>
+                </div>
+            </div>
+            <a href="https://www.w3schools.com/plus/index.php" class="bg-green">Learn More</a>
+        </div>
+
+    </section>
+
+    <!----------------------------color-------------------------------->
+    <div class="color-section">
+        <div class="color-sec-p">
+            <h1>Color Picker</h1>
+            <p>W3Schools' famous color picker:</p>
+            <a href="https://www.w3schools.com/colors/colors_picker.asp"><img
+                    src="assets/image/06 colorpicker.webp"></a>
+        </div>
+    </div>
+
+    <!--------------------------Code Game-------------------------->
+
+    <div class="code-game-con">
+        <h1>Code Game</h1>
+        <p>Help the Lynx collect pine cones!</p>
+        <a href="https://www.w3schools.com/codegame/index.html"><img src="assets/image/07w3lynx_200.webp" alt=""> </a>
+        <br> <br>
+        <a href="https://www.w3schools.com/codegame/index.html" class="bg-blue">Play Game</a>
+
+    </div>
+
+    <!--------------------------------Exercises and Quizzes---------------------------------------->
+
+    <div class="exercise">
+        <div class="exersixe-text">
+            <h1>Exercises and Quizzes </h1>
+            <p>Test your skills! </p>
+            <div class="exersize-grid">
+                <a href="https://www.w3schools.com/exercises/index.php" class="bg-green">Exercises</a>
+                <a href="https://www.w3schools.com/quiztest/default.asp" class="bg-yeollow">Quizzes</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!--------------------------------Web Templates---------------------------------------->
+
+    <div class="web">
+        <div class="web_container">
+            <h1>Web Templates</h1>
+            <p>Browse our selection of free responsive HTML Templates </p>
+            <img src="assets/image/08w3css_templates.webp" alt="">
+            <a href="https://www.w3schools.com/w3css/w3css_templates.asp" class="bg-blue"
+                style="width:50%;font-size:20px;">Browse Templates</a>
+
+        </div>
+    </div>
+
+    <!--------------------------------Kickstart---------------------------------------->
+
+    <div class="Kickstart">
+
+        <div class="lickstart-con">
+            <h1>Kickstart your career</h1>
+            <h1>Get certified by completing a course</h1>
+            <a href="https://campus.w3schools.com/en-in/collections/course-catalog" class="bg-green">Get Started</a>
+        </div>
+
+        <div class="kick-logo">
+            <div class="kick-arrow">
+                <svg id="w3_cert_arrow_default" viewBox="0 0 170 143" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.7747 42.7064C9.7747 42.7064 19.5575 77.2951 44.4558 84.8113C62.0225 90.1142 81.0061 80.1196 77.791 68.3309C76.0904 62.0955 69.0574 62.4735 65.5106 65.8444C59.1003 71.9368 67.8591 89.7423 77.9205 96.1324C112.816 118.295 161.943 84.5867 161.943 84.5867"
+                        stroke="white" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M159.804 93.8429L162.704 84.4917L152.715 80.8293" stroke="white" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </div>
+            <svg id="w3_cert_badge_default" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+                <defs>
+                    <style>
+                        .cls-1 {
+                            fill: #04aa6b;
+                        }
+
+                        .cls-2 {
+                            font-size: 23px;
+                        }
+
+                        .cls-2,
+                        .cls-3,
+                        .cls-4 {
+                            fill: #fff;
+                        }
+
+                        .cls-2,
+                        .cls-3 {
+                            font-family: RobotoMono-Medium, Roboto Mono;
+                            font-weight: 500;
+                        }
+
+                        .cls-3 {
+                            font-size: 20.08px;
+                        }
+                    </style>
+                </defs>
+                <circle class="cls-1" cx="150" cy="150" r="146.47" transform="translate(-62.13 150) rotate(-45)">
+                </circle><text class="cls-2" transform="translate(93.54 63.89) rotate(-29.5)">w</text><text
+                    class="cls-2" transform="translate(107.13 56.35) rotate(-20.8)">3</text><text class="cls-2"
+                    transform="matrix(0.98, -0.21, 0.21, 0.98, 121.68, 50.97)">s</text><text class="cls-2"
+                    transform="translate(136.89 47.84) rotate(-3.47)">c</text><text class="cls-2"
+                    transform="translate(152.39 47.03) rotate(5.12)">h</text><text class="cls-2"
+                    transform="translate(167.85 48.54) rotate(13.72)">o</text><text class="cls-2"
+                    transform="translate(182.89 52.35) rotate(22.34)">o</text><text class="cls-2"
+                    transform="matrix(0.86, 0.52, -0.52, 0.86, 197.18, 58.36)">l</text><text class="cls-2"
+                    transform="matrix(0.77, 0.64, -0.64, 0.77, 210.4, 66.46)">s</text><text class="cls-3"
+                    transform="translate(35.51 186.66) rotate(69.37)"> </text><text class="cls-3"
+                    transform="matrix(0.47, 0.88, -0.88, 0.47, 41.27, 201.28)">C</text><text class="cls-3"
+                    transform="matrix(0.58, 0.81, -0.81, 0.58, 48.91, 215.03)">E</text><text class="cls-3"
+                    transform="matrix(0.67, 0.74, -0.74, 0.67, 58.13, 227.36)">R</text><text class="cls-3"
+                    transform="translate(69.16 238.92) rotate(39.44)">T</text><text class="cls-3"
+                    transform="matrix(0.85, 0.53, -0.53, 0.85, 81.47, 248.73)">I</text><text class="cls-3"
+                    transform="translate(94.94 256.83) rotate(24.36)">F</text><text class="cls-3"
+                    transform="translate(109.34 263.09) rotate(16.83)">I</text><text class="cls-3"
+                    transform="translate(124.46 267.41) rotate(9.34)">E</text><text class="cls-3"
+                    transform="translate(139.99 269.73) rotate(1.88)">D</text><text class="cls-3"
+                    transform="translate(155.7 270.01) rotate(-5.58)"> </text><text class="cls-3"
+                    transform="translate(171.32 268.24) rotate(-13.06)"> </text><text class="cls-2"
+                    transform="translate(187.55 266.81) rotate(-21.04)">.</text><text class="cls-3"
+                    transform="translate(203.27 257.7) rotate(-29.24)"> </text><text class="cls-3"
+                    transform="translate(216.84 249.83) rotate(-36.75)"> </text><text class="cls-3"
+                    transform="translate(229.26 240.26) rotate(-44.15)">2</text><text class="cls-3"
+                    transform="translate(240.39 229.13) rotate(-51.62)">0</text><text class="cls-3"
+                    transform="translate(249.97 216.63) rotate(-59.17)">2</text><text class="cls-3"
+                    transform="matrix(0.4, -0.92, 0.92, 0.4, 257.81, 203.04)">3</text>
+                <path class="cls-4"
+                    d="M196.64,136.31s3.53,3.8,8.5,3.8c3.9,0,6.75-2.37,6.75-5.59,0-4-3.64-5.81-8-5.81h-2.59l-1.53-3.48,6.86-8.13a34.07,34.07,0,0,1,2.7-2.85s-1.11,0-3.33,0H194.79v-5.86H217.7v4.28l-9.19,10.61c5.18.74,10.24,4.43,10.24,10.92s-4.85,12.3-13.19,12.3a17.36,17.36,0,0,1-12.41-5Z">
+                </path>
+                <path class="cls-4"
+                    d="M152,144.24l30.24,53.86,14.94-26.61L168.6,120.63H135.36l-13.78,24.53-13.77-24.53H77.93l43.5,77.46.15-.28.16.28Z">
+                </path>
+            </svg>
+        </div>
+
+    </div>
+
+    <!----------------------------------How To Section--------------------------------->
+
+    <section class="HowToSection_section">
+        <div class="HowToSection-con">
+            <h1>How To Section</h1>
+            <p style="font-size: 20px;">Code snippets for HTML, CSS and JavaScript </p>
+            <p style="font-size: 16px;">For example, how to create a slideshow:</p>
+
+            <div class="code-editer">
+                <div class="code-editer-top">
+                    <div class="code-editer-top-left">
+                        <div class="dot" style="background: #ED594A;"></div>
+                        <div class="dot" style="background: #FDD800;"></div>
+                        <div class="dot" style="background: #5AC05A;"></div>
+                    </div>
+                    <div class="code-editer-top-right">
+                        www.w3schools.com/howto/
+                    </div>
+                </div>
+
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="assets/image/11img_nature_wide.jpg" style="width:100%">
+                        <div class="text">Caption Text</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="assets/image/12img_snow_wide.jpg" style="width:100%">
+                        <div class="text">Caption Two</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="assets/image/13img_mountains_wide.jpg" style="width:100%">
+                        <div class="text">Caption Three</div>
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div class="dot-con" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+            </div>
+
+            <div class="lastbutton">
+                <div class="verticalbox"> </div>
+                <a href="https://www.w3schools.com/howto/default.as" class="bg-blue">Learn How To</a>
+
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------------------Footer--------------------------------------->
+    <footer>
+        <div class="footerwrapper">
+            <div class="spacemyfooter">
+                <div class="footer-nav">
+                    <img src="assets/image/W3Schools_logo.svg" alt="">
+                    <a href="https://www.w3schools.com/plus/index.php">PLUS</a>
+                    <a href="">SPACES</a>
+                    <a href="">GET CERTIFIED</a>
+                    <a href="">FOR TEACHERS</a>
+                    <a href="">FOR BUSINESS</a>
+                    <a href="">CONTACT US</a>
+                </div>
+                <div class="footer-main">
+                    <div class="footer-m-list">
+                        <h6>Top Tutorials</h6>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">HTML
+                            Tutorial</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">CSS
+                            Tutorial</a>
+                        <a href=""
+                            style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">JavaScript
+                            Tutorial</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">How To
+                            Tutorial</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">SQL
+                            Tutorial</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">Python
+                            Tutorial</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">W3.CSS
+                            Tutorial</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">Bootstrap
+                            Tutorial</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">PHP
+                            Tutorial</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">Java
+                            Tutorial</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">C++
+                            Tutorial</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">jQuery
+                            Tutorial</a>
+                    </div>
+                    <div class="footer-m-list">
+                        <h6>Top References</h6>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">HTML
+                            Reference</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">CSS
+                            Reference</a>
+                        <a href=""
+                            style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">JavaScript
+                            Reference</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">SQL
+                            Reference</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">Python
+                            Reference</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">W3.CSS
+                            Reference</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">Bootstrap
+                            Reference</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">PHP
+                            Reference</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">HTML
+                            Colors</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">Java
+                            Reference</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">Angular
+                            Reference</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">jQuery
+                            Reference</a>
+                    </div>
+                    <div class="footer-m-list">
+                        <h6>Top Examples</h6>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">HTML
+                            Examples</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">CSS
+                            Examples</a>
+                        <a href=""
+                            style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">JavaScript
+                            Examples</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">How To
+                            Examples</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">SQL
+                            Examples</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">Python
+                            Examples</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">W3.CSS
+                            Examples</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">Bootstrap
+                            Examples</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">PHP
+                            Examples</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">Java
+                            Examples</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">XML
+                            Examples</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">jQuery
+                            Examples</a>
+                    </div>
+                    <div class="footer-m-list">
+                        <h6>Get Certified</h6>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">HTML
+                            Certificate</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">CSS
+                            Certificate</a>
+                        <a href=""
+                            style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">JavaScript
+                            Certificate</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">Front End
+                            Certificate</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">SQL
+                            Certificate</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">Python
+                            Certificate</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">PHP
+                            Certificate</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">jQuery
+                            Certificate</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">Java
+                            Certificate</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">C++
+                            Certificate</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">C#
+                            Certificate</a>
+                        <a href="" style="font-size: 7px; text-decoration: none; color: #ddd; display: block;">XML
+                            Certificate</a>
+                    </div>
+                </div>
+                <div class="footer-foot-part">
+                    <div class="foot_icons">
+                        <i class="fa-brands fa-youtube" style=" color: #ddd; padding-right: 7px; "></i>
+                        <i class="fa-brands fa-linkedin" style=" color: #ddd; padding-right: 7px; "></i>
+                        <i class="fa-brands fa-discord" style=" color: #ddd; padding-right: 7px; "></i>
+                        <i class="fa-brands fa-square-facebook" style=" color: #ddd;  padding-right: 7px;"></i>
+                        <i class="fa-brands fa-instagram" style=" color: #ddd;  padding-right: 7px;"></i>
+                        <a href="">FORUM </a>
+                        <a href=""> ABOUT </a>
+                        <a href=""> ACADEMY </a>
+                    </div>
+                    <p>W3Schools is optimized for learning and training. Examples might be simplified to improve reading
+                        and learning. <br>
+                        Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot
+                        warrant full correctness <br>
+                        of all content. While using W3Schools, you agree to have read and accepted our <a href="">terms
+                            of use, cookie and privacy policy.</a></p>
+                    <p><a href="">Copyright 1999-2024</a> by Refsnes Data. All Rights Reserved. <a href="">W3Schools is
+                            Powered by W3.CSS</a>.</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+
+    integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $('.mynavbar').slick({
+            dots: false,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 20,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    });
+</script> -->
+
+
+<svg style="background-color:#D9EEE1;" width="100%" height="100" margin-top:50px viewBox="0 0 100 100"
+    preserveAspectRatio="none">
+    <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35" class="svg"></path>
+</svg>
+<div class="last">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet nam nesciunt quo similique aperiam odit officia
+        a reiciendis quisquam maiores expedita eaque numquam vitae itaque magni repellendus, laudantium optio veritatis.
+    </p>
+</div>
+
+</html>
